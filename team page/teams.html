@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team page</title>
+
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        .main {
+            width: 1350px;
+            height: 100vh;
+            /* background-color: black; */
+            overflow: hidden;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .card {
+            width: 500px;
+            height: 500px;
+            background-color: #f15245;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            /* box-shadow: 10px 10px 114px 14px rgba(248, 246, 246, 0.37); */
+            transition: 1s;
+            margin: auto;
+            position: relative;
+            top: 20px;
+            animation: rotate 5s ease-in-out infinite;
+            float: left;
+            opacity: .5;
+        }
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .card:nth-child(1) {
+            position: relative;
+            top: -100px;
+            left: -100px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(270deg);
+        }
+        .card:nth-child(2) {
+            position: relative;
+            top: -100px;
+            left: 500px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(110deg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .card:nth-child(3) {
+            position: relative;
+            /* top: -100px; */
+            left: -100px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(180deg);
+        }
+        .card:nth-child(4) {
+            position: relative;
+            /* top: -100px; */
+            left: 500px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(400deg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .card:nth-child(5) {
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            top: 0px;
+            left: 450px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(220deg);
+        }
+        .card:nth-child(6) {
+            position: absolute;
+            top: 200px;
+            left: 450px;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            filter: hue-rotate(340deg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .team {
+            width: 100%;
+            height: 100vh;
+            /* background-image: url(team1.png); */
+            /* background-color: black; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation: change 10s infinite ease-in-out; */
+            position: absolute;
+            top: 0;
+        }
+        @keyframes change {
+            50% {
+                background-image: url(team2.png);
+            }
+
+            100% {
+                background-image: url(team3.png);
+            }
+
+            0% {
+                background-image: url(team1.png);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .box-container {
+            width: 300px;
+            height: 400px;
+            /* backdrop-filter: blur(20px); */
+            background-image: url(img5.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 1s;
+            /* /* box-shadow:0 0 20px red   */
+        }
+        .box {
+            width: 300px;
+            height: 400px;
+            background-image: url(img4.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .b {
+            background-image: url(img2.jpg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .c {
+            background-image: url(img3.jpg);
+        }
+        .in_box {
+            width: 100%;
+            height: 60%;
+            backdrop-filter: blur(20px);
+            position: relative;
+            bottom: -100%;
+            transition: 1s;
+            text-align: center;
+            /* border-radius: 10px; */
+        }
+        .box:hover .in_box {
+
+            bottom: -40%;
+        }
+        .box-container:hover {
+            background: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 2px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 50px #03e9f4;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            transform: translateY(-20px);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .in_box h2 {
+            color: #03e9f4;
+            font-size: 30px;
+            font-weight: 100;
+            text-align: center;
+            padding: 30px;
+            font-family: Brush Script MT;
+        }
+        .icon_div {
+            margin: auto;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon_div ul li {
+            display: inline-block;
+            /* margin-top: 1/0px; */
+        }
+        .icon_div ul li a ion-icon {
+            z-index: 9999999;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .icon_div ul li a {
+            font-size: 15px;
+            font-weight: 100;
+            color: #03e9f4;
+            margin: 0px 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .6s;
+            border-radius: 50%;
+            z-index: 999999;
+            border: 1px solid #03e9f4;
+
+        }
+        .icon_div ul li:hover a {
+            border-radius: 50%;
+            background: transparent;
+            transform: rotate(360deg);
+        }
+        .icon_div ul li .facebook:hover {
+            color: white;
+            /* border: none; */
+            background: #3B5998;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .icon_div ul li .instagram:hover {
+            color: white;
+            /* border: none; */
+            background: radial-gradient(circle at 33% 100%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+        }
+        .icon_div ul li .twitter:hover {
+            color: white;
+            /* border: none; */
+            background: #55ACEE;
+        }
+        .in_box h3 {
+            color: aqua;
+            font-size: 15px;
+            margin-top: 20px;
+            font-family: Arial Rounded MT;
+        }
+        .in_box h3:hover {
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .btn {
+            width: 70%;
+            height: 40px;
+            margin: auto;
+            /* background: transparent; */
+            font-size: 20px;
+            margin-top: 15px;
+            color: #03e9f4;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .btn:hover {
+            background: #03e9f4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+    <div class="main">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="team" id="team">
+        <div class="box-container" id="box-container1">
+            <div class="box a">
+                <div class="in_box">
+                    <h2>Priyanka</h2>
+                    <div class="icon_div">
+                        <ul>
+                            <li><a href="#" class="facebook">
+                                <ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#" class="instagram">
+                                <ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#" class="twitter">
+                                <ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <h3>priyanka9744@gmail.com</h3>
+                    <button class="btn">follow</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="box-container">
+            <div class="box b">
+                <div class="in_box">
+                    <h2>Lakshmi</h2>
+                    <div class="icon_div">
+                        <ul>
+                            <li><a href="#" class="facebook">
+                                <ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#" class="instagram">
+                                <ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#" class="twitter">
+                                <ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <h3>lakshmi9655@gmail.com</h3>
+                    <button class="btn">follow</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="box-container">
+            <div class="box c">
+                <div class="in_box">
+                    <h2>Balvinder</h2>
+                    <div class="icon_div">
+                        <ul>
+                            <li><a href="#" class="facebook">
+                                <ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#" class="instagram">
+                                <ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#" class="twitter">
+                                <ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <h3>balvinder8429@gmail.com</h3>
+                    <button class="btn">follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
