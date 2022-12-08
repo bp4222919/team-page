@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>team_pageNo4</title>
+	<style type="text/css">
+	* {
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			transition: 2s;
+		}
+		.main {
+			width: 100%;
+			height: 700px;
+			/*background-color: dimgray;*/
+			text-align: center;
+		}
+		.main h1,
+		h2 {
+			font-size: 35px;
+			color: darkred;
+			position: relative;
+			top: 70px;
+		}
+		.main_in_div {
+			width: 1300px;
+			height: 480px;
+			/*background-color: #EEEEEE;*/
+			margin: auto;
+			position: relative;
+			top: 100px;
+		}
+		.team_div {
+			width: 300px;
+			height: 100%;
+			background-color: #EEEEEE;
+			float: left;
+			margin-left: 100px;
+			overflow: hidden;
+			text-align: center;
+			border-radius: 50px;
+		}
+		.team_div:hover {
+			box-shadow: 5px 5px 20px 0px #888;
+		}
+		.image {
+			width: 250px;
+			height: 250px;
+			background-color: white;
+			border-radius: 50%;
+			margin: auto;
+			position: relative;
+			top: 20px;
+		}
+		.image img {
+			width: 95%;
+			height: 95%;
+			border-radius: 50%;
+			padding: 7px;
+		}
+		.team_div:hover .image {
+			background-color: black;
+		}
+		.team_div h2 {
+			color: gray;
+			position: relative;
+			top: 25px;
+			font-size: 25px;
+		}
+		.team_div p {
+			color: gray;
+			position: relative;
+			top: 30px;
+		}
+		.icon_div {
+			width: 105%;
+			height: 70px;
+			background-color: black;
+			margin-top: 70px;
+			position: relative;
+			left: -350px;
+			border-radius: 50px;
+		}
+		.team_div:hover .icon_div {
+			left: -40px;
+		}
+		.icon_div ion-icon {
+			color: white;
+			font-size: 30px;
+			padding: 20px;
+		}
+		.icon_div ion-icon:hover {
+			background-color: white;
+			color: black;
+			border-radius: 50%;
+		}
+	</style>
+
+	
+</head>
+<body>
+	<div class="main">
+		<h1>DEDICATER TEAM</h1>
+		<h2>Our Team</h2>
+		<div class="main_in_div">
+			<div class="team_div">
+				<div class="image">
+					<img src="bg.jpg">
+				</div>
+				<h2>Balvinder Kumar</h2>
+				<p>WEB DESIGINER</p>
+				<div class="icon_div">
+					<ion-icon name="logo-instagram"></ion-icon>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="logo-twitter"></ion-icon>
+				</div>
+			</div>
+			<div class="team_div">
+				<div class="image">
+					<img
+						src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600">
+				</div>
+				<h2>Jennifer Doe</h2>
+				<p>WEB DESIGINER</p>
+				<div class="icon_div">
+					<ion-icon name="logo-instagram"></ion-icon>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="logo-twitter"></ion-icon>
+				</div>
+			</div>
+			<div class="team_div">
+				<div class="image">
+					<img
+						src="https://images.pexels.com/photos/769772/pexels-photo-769772.jpeg?auto=compress&cs=tinysrgb&w=600">
+				</div>
+				<h2>Raman</h2>
+				<p>WEB DESIGINER</p>
+				<div class="icon_div">
+					<ion-icon name="logo-instagram"></ion-icon>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="logo-twitter"></ion-icon>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+</body>
+</html>
